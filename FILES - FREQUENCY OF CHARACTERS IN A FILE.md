@@ -31,10 +31,26 @@ To write a Python program that reads a file and counts the frequency of each cha
 
 ```
 
+from collections import defaultdict
+
+def create_file(file_path, content):
+    with open(file_path, 'w') as file:
+        file.write(content)
+
+def char_frequency(file_path):
+    freq = defaultdict(int)
+    with open(file_path, "r") as file:
+        content = file.read()
+        for char in content:
+            freq[char] += 1
+    return freq
 ```
 
 
 ### OUTPUT
 
+<img width="1368" height="214" alt="image" src="https://github.com/user-attachments/assets/375b1d05-c8f6-4def-9f09-1ad980fe52d1" />
 
 ### RESULT
+Thus the program that reads a file and counts the frequency of each character in it has been implemented and executed successfully.
+
