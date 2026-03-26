@@ -29,15 +29,27 @@ To write a Python program to take the radius from the user and find the area of 
 
 ```
 
+import math
+
+class Pen:
+    def stationary(self, radius):
+        area = math.pi * radius * radius
+        print(f"Area of circle: {area:.2f}")
+
+radius = float(input())
+p = Pen()
+p.stationary(radius)
 
 
 ```
 
 ### OUTPUT
+<img width="543" height="157" alt="image" src="https://github.com/user-attachments/assets/e81143d1-b3cb-4c82-9fe2-cc83ac0874b7" />
 
 
 
 ### RESULT
+Thus the program to take the radius from the user and find the area of a circle has been implemented and executed successfully.
 
 
 
